@@ -1,0 +1,17 @@
+body{
+    background-color: darkgrey;
+    color: white;
+}
+a:link{
+    color: white;               /* unvisited link */
+}
+a:visited{
+    color: pink;                /* visited link */
+}
+img {
+    border: 1px solid white;    /* white border line */
+    padding: 2px;                 /* pixels between img and border */
+    border-radius: 4px;           /* rounded edges */  
+    width: 25%;
+}
+
