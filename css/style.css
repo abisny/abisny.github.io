@@ -1,6 +1,12 @@
 body{
     background-color: darkgrey;
     color: white;
+    font-family: ltc-bodoni-175, serif;
+    font-style: italic;
+    font-weight: 400;
+}
+h1{
+    font-family: 'Roboto Slab', serif;
 }
 a:link{
     color: white;               /* unvisited link */
