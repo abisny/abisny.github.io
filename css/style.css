@@ -8,6 +8,11 @@ body{
 h1{
     font-family: 'Roboto Slab', serif;
 }
+li{
+  display: inline-block;
+  width: 15%;
+  text-align: center;
+}
 a:link{
     color: white;               /* unvisited link */
 }
@@ -19,4 +24,7 @@ img {
     padding: 2px;                 /* pixels between img and border */
     border-radius: 4px;           /* rounded edges */
     width: 25%;
+}
+.current {
+  text-transform: uppercase;
 }
