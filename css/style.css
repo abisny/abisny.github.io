@@ -19,12 +19,22 @@ a:link{
 a:visited{
     color: pink;                /* visited link */
 }
-img {
+img{
     border: 1px solid white;    /* white border line */
     padding: 2px;                 /* pixels between img and border */
     border-radius: 4px;           /* rounded edges */
-    width: 25%;
+    width: 100%;
 }
-.current {
+.current{
   text-transform: uppercase;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 80% auto;
+}
+
+.profile{
+  grid-column-start: 2;
+  grid-column-end: 4;
 }
