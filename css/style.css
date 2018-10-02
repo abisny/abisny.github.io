@@ -1,14 +1,19 @@
+/* MAIN STYLE SHEET */
+
 body {
-    background-color: darkgrey;
-    color: white;
-    font-family: ltc-bodoni-175, serif;
-    font-style: italic;
-    font-weight: 400;
+  background-color: darkgrey;
+  color: white;
+  font-family: serif;
+  font-style: italic;
+  font-weight: 400;
 }
 h1 {
-    font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto Slab', serif;
 }
-li {
+h2 {
+  margin: 5px 5px;
+}
+nav.li {
   display: inline-block;
   width: 15%;
   text-align: center;
@@ -27,19 +32,22 @@ a:visited {
   text-transform: uppercase;  /* uppercase letters for current page link */
 }
 img {
-    border: 1px solid white;  /* white border line */
-    padding: 3px;             /* pixels between img and border */
-    border-radius: 4px;       /* rounded edges */
-    width: 100%;
+  border: 1px solid white;  /* white border line */
+  padding: 3px;             /* pixels between img and border */
+  border-radius: 4px;       /* rounded edges */
+  width: 100%;
 }
-.container {
+.container-index {
   display: grid;
   grid-template-columns: 80% auto;
 }
-.profile {
-
+.container-resume {
+  display: grid;
+  grid-template-columns: auto 80% auto;
 }
-.text{
+.resume {
+  margin: 0 0 0 auto;
+}
+.text-index {
   margin-right: 10px;
-  border: 1px solid white;  /* TODO: get rid of this later */
 }
