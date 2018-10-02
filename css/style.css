@@ -13,7 +13,7 @@ h1 {
 h2 {
   margin: 5px 5px;
 }
-nav.li {
+li.nav{
   display: inline-block;
   width: 15%;
   text-align: center;
