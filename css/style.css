@@ -1,4 +1,4 @@
-/* MAIN STYLE SHEET */
+/* PORTFOLIO STYLE SHEET */
 
 body {
   background-color: darkgrey;
@@ -7,16 +7,19 @@ body {
   font-style: italic;
   font-weight: 400;
 }
-h1 {
+h1 {  /* used only for my name */
   font-family: 'Roboto Slab', serif;
+  font-style: normal;
 }
-h2 {
-  margin: 5px 5px;
+.nav{
+  justify-content: space-between;
 }
 li.nav{
   display: inline-block;
   width: 15%;
   text-align: center;
+  font-size: 110%;
+  font-style: normal;
 }
 a:link {
   color: white; /* unvisited link */
@@ -24,11 +27,7 @@ a:link {
 a:visited {
   color: pink;  /* visited link */
 }
-.fa-linkedin {  /* LinkedIn icon */
-  color: #2A38C9;
-  padding: 10px;
-}
-.current {
+a.current {
   text-transform: uppercase;  /* uppercase letters for current page link */
 }
 img {
@@ -37,17 +36,25 @@ img {
   border-radius: 4px;       /* rounded edges */
   width: 100%;
 }
-.container-index {
+div.container-index {
   display: grid;
   grid-template-columns: 80% auto;
 }
-.container-resume {
+div.container-resume {
   display: grid;
   grid-template-columns: auto 80% auto;
 }
-.resume {
-  margin: 0 0 0 auto;
-}
-.text-index {
+div.text-index {
   margin-right: 10px;
+}
+.fa-linkedin {  /* LinkedIn icon */
+  color: #2A38C9;
+  padding: 10px;
+}
+body.coming-soon {  /* TODO: fix this. */
+    background-image: url("images/coming-soon.jpeg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
