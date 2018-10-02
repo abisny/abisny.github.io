@@ -1,41 +1,45 @@
-body{
+body {
     background-color: darkgrey;
     color: white;
     font-family: ltc-bodoni-175, serif;
     font-style: italic;
     font-weight: 400;
 }
-h1{
+h1 {
     font-family: 'Roboto Slab', serif;
 }
-li{
+li {
   display: inline-block;
   width: 15%;
   text-align: center;
 }
-a:link{
-    color: white;               /* unvisited link */
+a:link {
+  color: white; /* unvisited link */
 }
-a:visited{
-    color: pink;                /* visited link */
+a:visited {
+  color: pink;  /* visited link */
 }
-.current{
-  text-transform: uppercase;
+.fa-linkedin {  /* LinkedIn icon */
+  color: #2A38C9;
+  padding: 10px;
 }
-img{
-    border: 1px solid white;    /* white border line */
-    padding: 3px;                 /* pixels between img and border */
-    border-radius: 4px;           /* rounded edges */
+.current {
+  text-transform: uppercase;  /* uppercase letters for current page link */
+}
+img {
+    border: 1px solid white;  /* white border line */
+    padding: 3px;             /* pixels between img and border */
+    border-radius: 4px;       /* rounded edges */
     width: 100%;
 }
-.container{
+.container {
   display: grid;
   grid-template-columns: 80% auto;
 }
-.profile{
+.profile {
 
 }
 .text{
   margin-right: 10px;
-  border: 1px solid white;
+  border: 1px solid white;  /* TODO: get rid of this later */
 }
