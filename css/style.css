@@ -52,13 +52,25 @@ div.container-resume {
   padding: 10px;
 }
 .big-icon {
-  margin-left: 25px;
   font-size: 400%;
 }
 img.coming-soon {   /* background image */
-    background-image: url("images/coming-soon.jpeg");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("images/coming-soon.jpeg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+img.small-header-img {
+  margin-left: 40%;
+  margin-right: 40%;
+  width: 20%;
+}
+.contact-div {
+  margin-left: 40%;
+  margin-right: 40%;
+}
+.container-profile {
+  display: grid;
+  grid-template-columns: 80% auto;
 }
