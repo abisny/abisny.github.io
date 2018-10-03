@@ -40,18 +40,22 @@ div.container-index {
   display: grid;
   grid-template-columns: 80% auto;
 }
+div.text-index {
+  margin-right: 10px;
+}
 div.container-resume {
   display: grid;
   grid-template-columns: auto 80% auto;
-}
-div.text-index {
-  margin-right: 10px;
 }
 .fa-linkedin {  /* LinkedIn icon */
   color: #2A38C9;
   padding: 10px;
 }
-body.coming-soon {  /* TODO: fix this. */
+.big-icon {
+  margin-left: 25px;
+  font-size: 400%;
+}
+img.coming-soon {   /* background image */
     background-image: url("images/coming-soon.jpeg");
     height: 100%;
     background-position: center;
