@@ -54,12 +54,8 @@ div.container-resume {
 .big-icon {
   font-size: 400%;
 }
-img.coming-soon {   /* background image */
-  background-image: url("images/coming-soon.jpeg");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.background {   /* background image for graphic design */
+    background-image: url("../images/coming-soon.jpeg");
 }
 img.small-header-img {
   margin-left: 40%;
