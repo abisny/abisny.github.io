@@ -7,16 +7,20 @@ body {
   font-style: italic;
   font-weight: 400;
 }
+
 h1 {  /* used only for my name */
   font-family: 'Roboto Slab', serif;
   font-style: normal;
 }
+
 h3 {
   font-style: normal; /* for projects page */
 }
+
 nav {
   justify-content: space-between;
 }
+
 .nav {
   display: block;
   width: 15%;
@@ -24,51 +28,69 @@ nav {
   font-size: 110%;
   font-style: normal;
 }
+
 a:link {
   color: white; /* unvisited link */
 }
+
 a:visited {
   color: pink;  /* visited link */
 }
+
 a.current {
   text-transform: uppercase;  /* uppercase letters for current page link */
 }
+
 img {
-  border: 1px solid white;  /* white border line */
-  padding: 3px;             /* pixels between img and border */
-  border-radius: 4px;       /* rounded edges */
   width: 100%;
 }
+
+@media only screen and (min-width: 750px) {
+  img {
+    border: 1px solid white;  /* white border line */
+    padding: 3px;             /* pixels between img and border */
+    border-radius: 4px;       /* rounded edges */
+  }
+}
+
 div.container-index {
   display: grid;
   grid-template-columns: 80% auto;
 }
+
 div.text-index {
   margin-right: 10px;
 }
+
 div.container-resume {
   display: grid;
   grid-template-columns: auto 80% auto;
 }
+
 .fa-linkedin {  /* LinkedIn icon */
   color: #2A38C9;
   padding: 10px;
 }
+
 .big-icon {
   font-size: 400%;
 }
+
 .background {   /* background image for graphic design */
     background-image: url("../images/coming-soon.jpeg");
 }
+
 img.small-header-img {
   margin-left: 40%;
   margin-right: 40%;
   width: 20%;
 }
+
 .contact-div {
   margin-left: 40%;
   margin-right: 40%;
 }
+
 .container-profile {
   display: grid;
   grid-template-columns: 80% auto;
@@ -87,21 +109,22 @@ img.small-header-img {
   display: grid;
   margin-left: 5px;
   margin-right: 5px;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
 }
 
 @media only screen and (min-width: 750px) {
   .container-projects {
     margin-left: 20px;
     margin-right: 20px;
+    column-gap: 20px;
   }
 }
 
-.item {
-  grid-column-start: 1;
-  grid-column-end: 1;
+.single-item {
+  grid-template-columns: 1fr;
 }
 
 @media all and (orientation: portrait) {
-  font-style: None;
+  font-style: normal;
 }
