@@ -7,8 +7,9 @@
     <title>Abigail Snyder- Projects</title>
     <link rel='stylesheet' type='text/css' href='css/default.css'>
     <link rel='stylesheet' type='text/css' href='css/style.css'>
+    <link rel="stylesheet" type="text/css" href="css/lightbox-2.css">
     <link rel="stylesheet" type="text/css" href="css/lightbox.css">
-    <link href="dist/js/lightbox-plus-jquery.js" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 </head>
 <body>
@@ -26,22 +27,22 @@
     <main>
       <h2>LIFTFORWARD</h2>
       <div class='gallery'>
-        <a href='images/liftforward-home.png'> <img src='images/liftforward-home.png' alt='LiftForward'></a>
-    		<a href='images/liftforward-microsoft.png'> <img src='images/liftforward-microsoft.png' alt='LiftForward-Microsoft'></a>
-    		<a href='images/liftforward-signin.png'> <img src='images/liftforward-signin.png' alt='LiftForward-Sign-In'></a>
+        <a href='images/liftforward-home.png' data-lightbox='lf'> <img src='images/liftforward-home.png' alt='LiftForward'></a>
+    		<a href='images/liftforward-microsoft.png' data-lightbox='lf'> <img src='images/liftforward-microsoft.png' alt='LiftForward-Microsoft'></a>
+    		<a href='images/liftforward-signin.png' data-lightbox='lf'> <img src='images/liftforward-signin.png' alt='LiftForward-Sign-In'></a>
       </div>
 
       <h2>SPARKLY.IO</h2>
       <div class='gallery'>
-        <a href='images/sparkly-home.png'> <img class="single-item" src='images/sparkly-home.png' alt='Sparkly.io'></a>
+        <a href='images/sparkly-home.png' data-lightbox='sparkly'> <img class="single-item" src='images/sparkly-home.png' alt='Sparkly.io'></a>
       </div>
 
       <h2>COURSE WORK</h2>
       <div class='gallery'>
-        <a href='images/coming-soon.jpeg'> <img class="single-item" src='images/coming-soon.jpeg' alt='coming soon'></a>
+        <a href='images/coming-soon.jpeg' data-lightbox='coursework'> <img class="single-item" src='images/coming-soon.jpeg' alt='coming soon'></a>
       </div>
     </main>
 
-    <script src="path/to/lightbox.js"></script>
+    <script src="js/lightbox-plus-jquery.js"></script>
 </body>
 </html>
