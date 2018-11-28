@@ -7,8 +7,8 @@
     <title>Abigail Snyder- Projects</title>
     <link rel='stylesheet' type='text/css' href='css/default.css'>
     <link rel='stylesheet' type='text/css' href='css/style.css'>
-    <link rel="stylesheet" type="text/css" href="css/lightbox-2.css">
     <link rel="stylesheet" type="text/css" href="css/lightbox.css">
+    <link rel="stylesheet" type="text/css" href="css/colleen-grid.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 </head>
@@ -25,24 +25,40 @@
     </nav>
 
     <main>
-      <h2>LIFTFORWARD</h2>
+      <h2>DOGS</h2>
       <div class='gallery'>
-        <a href='images/liftforward-home.png' data-lightbox='lf'> <img src='images/liftforward-home.png' alt='LiftForward'></a>
-    		<a href='images/liftforward-microsoft.png' data-lightbox='lf'> <img src='images/liftforward-microsoft.png' alt='LiftForward-Microsoft'></a>
-    		<a href='images/liftforward-signin.png' data-lightbox='lf'> <img src='images/liftforward-signin.png' alt='LiftForward-Sign-In'></a>
+        <a href='images/dogs-1.jpeg' data-lightbox='coursework'> <img class="single-item" src='images/dogs-1.jpeg' alt='dogs'></a>
+        <a href='images/dogs-2.jpeg' data-lightbox='coursework'> <img class='single-item' src='images/dogs-2.jpeg' alt='dogs'></a>
+        <a href='images/dogs-3.jpeg' data-lightbox='coursework'> <img class='single-item' src='images/dogs-3.jpeg' alt='dogs'></a>
       </div>
 
-      <h2>SPARKLY.IO</h2>
-      <div class='gallery'>
-        <a href='images/sparkly-home.png' data-lightbox='sparkly'> <img class="single-item" src='images/sparkly-home.png' alt='Sparkly.io'></a>
+      <h2>WORK EXPERIENCE</h2>
+      <div class="controls">
+            <button type="button" class="control" data-filter="all">All</button>
+            <button type="button" class="control" data-filter=".lf">LiftForward</button>
+            <button type="button" class="control" data-filter=".sparkly">Sparkly</button>
+            <button type="button" class="control" data-filter="none">None</button>
+      </div>
+      <div class='gallery filter'>
+        <a href='images/liftforward-home.png' class='mix lf' data-lightbox='lf'> <img src='images/liftforward-home.png' alt='LiftForward'></a>
+    		<a href='images/liftforward-microsoft.png' class='mix lf' data-lightbox='lf'> <img src='images/liftforward-microsoft.png' alt='LiftForward-Microsoft'></a>
+    		<a href='images/liftforward-signin.png' class='mix lf' data-lightbox='lf'> <img src='images/liftforward-signin.png' alt='LiftForward-Sign-In'></a>
+        <a href='images/sparkly-home.png' class='mix sparkly' data-lightbox='sparkly'> <img class="single-item" src='images/sparkly-home.png' alt='Sparkly.io'></a>
       </div>
 
-      <h2>COURSE WORK</h2>
+      <h2>MY COURSE WORK</h2>
       <div class='gallery'>
         <a href='images/coming-soon.jpeg' data-lightbox='coursework'> <img class="single-item" src='images/coming-soon.jpeg' alt='coming soon'></a>
+        <a href='images/profile.jpg' data-lightbox='coursework'> <img class='single-item' src='images/profile.jpg' alt='profile'></a>
+        <a href='images/profile-2.jpg' data-lightbox='coursework'> <img class='single-item' src='images/profile-2.jpg' alt='profile'></a>
       </div>
     </main>
 
     <script src="js/lightbox-plus-jquery.js"></script>
+    <script src="js/mixitup.js"></script>
+    <script>
+      var containerEl = document.querySelector('.filter');
+      var mixer = mixitup(containerEl);
+    </script>
 </body>
 </html>
