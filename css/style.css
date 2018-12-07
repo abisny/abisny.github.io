@@ -18,7 +18,8 @@ h1 {  /* used only for my name */
 
 h2 {
   font-style: normal; /* for projects page */
-  margin-top: 20px;
+  font-size: large;
+  margin-top: 25px;
   margin-left: 15px;
   margin-bottom: 5px;
 }
@@ -111,11 +112,15 @@ img.small-header-img {
   margin-left: 40%;
   margin-right: 40%;
   width: 20%;
+  border: None;
 }
 
-.contact-div {
+div.contact {
+  display: grid;
   margin-left: 40%;
   margin-right: 40%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 5px;
 }
 
 .container-profile {
@@ -132,6 +137,14 @@ img.small-header-img {
     justify-content: space-between;
   }
 }
+
+.row-container {
+  display: grid;
+  margin-left: 5px;
+  margin-right: 5px;
+  grid-template-rows: 1fr;
+}
+
 .container-projects {
   display: grid;
   margin-left: 5px;
@@ -146,10 +159,6 @@ img.small-header-img {
     margin-right: 20px;
     column-gap: 20px;
   }
-}
-
-.single-item {
-  grid-template-columns: 1fr;
 }
 
 @media all and (orientation: portrait) {
