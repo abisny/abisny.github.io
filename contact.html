@@ -62,15 +62,15 @@
       <script>
         $('form').submit(function() {
           if (!$('#name').val()) {
-            $('.error').css('display', 'block');
+            $('#nameerror').css('display', 'block');
             return false;
           }
           if (!$('#message').val()) {
-            $('.error').css('display', 'block');
+            $('#messageerror').css('display', 'block');
             return false;
           }
-          if (!$('email').val()) {
-            $('.error').css('display', 'block');
+          if (!$('#email').val()) {
+            $('#emailerror').css('display', 'block');
             return false;
           }
         });
