@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Abigail Snyder</title>
+    <link rel='stylesheet' type='text/css' href='css/default.css'>
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+</head>
+<body class='carousel'>
+    <header><h1>ABIGAIL SNYDER</h1></header>
+    <nav>
+        <ul>
+            <li class='nav'><a href='index.html'>Home</a></li>
+            <li class='nav'><a href='projects.html'>Projects</a></li>
+            <li class='nav'><a href='graphic-design.html'>Graphic Design</a></li>
+            <li class='nav'><a href='contact.html'>Contact</a></li>
+            <li class='nav'><a class='current' href='photography.html'>Photos</a></li>
+        </ul>
+    </nav>
+
+    <a href="#content" class="skip">Skip to content</a>
+    <main id='content'>
+      <h1 class='projects'>Traveling & Photography</h1>
+      <div class='slideshow-container'>
+        <div class='mySlides fade'>
+          <img class='carousel' src='images/photos/athens.jpeg' alt='Athens, Greece'>
+        </div>
+
+        <div class='mySlides fade'>
+          <img class='carousel' src='images/photos/england-house.jpeg' alt='England country house'>
+        </div>
+
+        <div class='mySlides fade'>
+          <img class='carousel' src='images/photos/jaffa.jpeg' alt='sunset in Jaffa'>
+        </div>
+
+        <div class='mySlides fade'>
+          <img class='carousel' src='images/photos/naxos.jpeg' alt='Naxos, Greece'>
+        </div>
+
+        <div class='mySlides fade'>
+          <img class='carousel' src='images/photos/negev.jpeg' alt='Negev Desert'>
+        </div>
+
+        <div class='mySlides fade'>
+          <img class='carousel' src='images/photos/prague.jpeg' alt='Prague, Czech Republic'>
+        </div>
+
+        <div class='mySlides fade'>
+          <img class='carousel' src='images/photos/stone-henge.jpeg' alt='Stone Henge'>
+        </div>
+
+        <div class='mySlides fade'>
+          <img class='carousel' src='images/photos/toronto.jpeg' alt='Toronto, Canada'>
+        </div>
+
+        <div class='mySlides fade'>
+          <img class='carousel' src='images/photos/vienna-horses.jpeg' alt='Vienna, Austria'>
+        </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div><br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+      </div>
+    </main>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }
+    </script>
+</body>
+
+</html>

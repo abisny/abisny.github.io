@@ -7,37 +7,46 @@
     <title>Abigail Snyder- Projects</title>
     <link rel='stylesheet' type='text/css' href='css/default.css'>
     <link rel='stylesheet' type='text/css' href='css/style.css'>
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css">
+    <link rel="stylesheet" type="text/css" href="css/colleen-grid.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 </head>
 <body>
-    <header><h1>My Projects</h1></header>
+    <header><h1>ABIGAIL SNYDER</h1></header>
     <nav>
         <ul>
             <li class='nav'><a href='index.html'>Home</a></li>
             <li class='nav'><a class='current' href='projects.html'>Projects</a></li>
-            <li class='nav'><a href='projects-lightbox.html'>Projects Lightbox</a></li>
             <li class='nav'><a href='graphic-design.html'>Graphic Design</a></li>
             <li class='nav'><a href='contact.html'>Contact</a></li>
+            <li class='nav'><a href='photography.html'>Photos</a></li>
         </ul>
     </nav>
 
-    <main>
-      <h2>LIFTFORWARD</h2>
-      <div class='container-projects'>
-        <img src='images/liftforward-home.png' alt='LiftForward'>
-        <img src='images/liftforward-microsoft.png' alt='LiftForward-Microsoft'>
-        <img src='images/liftforward-signin.png' alt='LiftForward-Sign-In'>
+    <a href="#content" class="skip">Skip to content</a>
+    <main id='content'>
+      <h1 class='projects'>My Projects</h1>
+      <div class="controls">
+            <button type="button" class="control" data-filter="all">All</button>
+            <button type="button" class="control" data-filter=".lf">LiftForward</button>
+            <button type="button" class="control" data-filter=".sparkly">Sparkly</button>
+            <button type="button" class="control" data-filter="none">None</button>
       </div>
-
-      <h2>SPARKLY.IO</h2>
-      <div class='container-projects'>
-        <img class="single-item" src='images/sparkly-home.png' alt='Sparkly.io'>
-      </div>
-
-      <h2>COURSE WORK</h2>
-      <div class='container-projects'>
-        <img class="single-item" src='images/coming-soon.jpeg' alt='coming soon'>
+      <h2 class='projects'>WORK EXPERIENCE</h2>
+      <div class='gallery filter'>
+        <a href='images/liftforward-home.png' class='mix lf' data-lightbox='lf' data-title='lf home'> <img src='images/liftforward-home.png' alt='LiftForward'><i aria-label='lightbox img'></i></a>
+    		<a href='images/liftforward-microsoft.png' class='mix lf' data-lightbox='lf' data-title='lf microsoft'> <img src='images/liftforward-microsoft.png' alt='LiftForward-Microsoft'><i aria-label='lightbox img'></i></a>
+    		<a href='images/liftforward-signin.png' class='mix lf' data-lightbox='lf' data-title='lf sign in'> <img src='images/liftforward-signin.png' alt='LiftForward-Sign-In'><i aria-label='lightbox img'></i></a>
+        <a href='images/sparkly-home.png' class='mix sparkly' data-lightbox='sparkly' data-title='sparkly'> <img class="single-item" src='images/sparkly-home.png' alt='Sparkly.io'><i aria-label='lightbox img'></i></a>
       </div>
     </main>
+
+    <script src="js/lightbox-plus-jquery.js"></script>
+    <script src="js/mixitup.js"></script>
+    <script>
+      var containerEl = document.querySelector('.filter');
+      var mixer = mixitup(containerEl);
+    </script>
 </body>
 </html>

@@ -1,8 +1,26 @@
 /* PORTFOLIO STYLE SHEET */
 
+.skip {
+        position: absolute;
+        top: -1000px;
+        left: -1000px;
+        height: 1px;
+        width: 1px;
+        text-align: left;
+        overflow: hidden;
+    }
+
+a.skip:active, a.skip:focus, a.skip:hover {
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    overflow: visible;
+}
+
 body {
-  background-color: darkgrey;
-  color: white;
+  background-color: pink;
+  color: black;
   font-family: serif;
   font-style: italic;
   font-weight: 400;
@@ -16,8 +34,18 @@ h1 {  /* used only for my name */
   margin-left: 15px;
 }
 
+h1.projects {
+  font-size: x-large;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-bottom: 5px;
+}
+
 h2 {
-  font-style: normal; /* for projects page */
+  font-style: normal;
+}
+
+h2.projects {
   font-size: large;
   margin-top: 25px;
   margin-left: 15px;
@@ -58,11 +86,11 @@ li {
 }
 
 a:link {
-  color: white; /* unvisited link */
+  color: black; /* unvisited link */
 }
 
 a:visited {
-  color: pink;  /* visited link */
+  color: darkblue;  /* visited link */
 }
 
 a.current {
@@ -113,6 +141,7 @@ img.small-header-img {
   margin-right: 40%;
   width: 20%;
   border: None;
+  border-radius: 4px;
 }
 
 div.contact {
@@ -153,6 +182,19 @@ div.contact {
   column-gap: 5px;
 }
 
+button {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-family: serif;
+  font-weight: 400;
+  border: none;
+}
+
+body form {
+  text-align: center;
+  display: inline-block;
+}
+
 @media only screen and (min-width: 750px) {
   .container-projects {
     margin-left: 20px;
@@ -163,4 +205,90 @@ div.contact {
 
 @media all and (orientation: portrait) {
   font-style: normal;
+}
+
+/* Carousel stuff */
+* {
+  box-sizing: border-box;
+}
+
+body.carousel {
+  margin: 0;
+}
+
+.my-slides {
+  display: none;
+}
+
+img.carousel {
+  vertical-align: middle;
+  width: 100%;
+  border: none;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.next, .prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border radius: 0 3px 3px 0;
+  user-select: None;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .prev:focus, .next:hover, .next:focus {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover, .dot:focus {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }

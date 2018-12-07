@@ -9,6 +9,15 @@
     <link rel='stylesheet' type='text/css' href='css/style.css'>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+      .error {
+        font-style: normal;
+        color: red;
+        display: None;
+      }
+    </style>
 </head>
 <body>
   <header><h1>ABIGAIL SNYDER</h1></header>
@@ -16,26 +25,69 @@
     <ul>
         <li class='nav'><a href='index.html'>Home</a></li>
         <li class='nav'><a href='projects.html'>Projects</a></li>
-        <li class='nav'><a href='projects-lightbox.html'>Projects Lightbox</a></li>
         <li class='nav'><a href='graphic-design.html'>Graphic Design</a></li>
         <li class='nav'><a class='current' href='contact.html'>Contact</a></li>
+        <li class='nav'><a href='photography.html'>Photos</a></li>
     </ul>
   </nav>
 
-  <main>
-    <div class='container-profile'>
-      <img class='small-header-img' src='images/contact-me.png' alt='Contact Me!'><br>
-      <div class='row-container'>
-        <div class='contact'>
-          <div></div>
-          <a href="mailto:abisny@umich.edu"><i class="fas fa-envelope-square big-icon" aria-label='mail-to icon'></i></a> <!-- FONT AWESOME (envelope icon for email) -->
-          <a href='https://www.linkedin.com/in/abigail-snyder-0816/'><i class="fab fa-linkedin big-icon" aria-label="LinkedIn logo"></i></a> <!-- FONT AWESOME (Linkedin icon) -->
-          <div></div>
-        </div>
+  <a href="#content" class="skip">Skip to content</a>
+  <main id='content'>
+    <img class='small-header-img' src='images/contact-me.png' alt='Contact Me!'><br>
+    <div class='row-container'>
+      <form action=''>
+          <fieldset>
+            <legend><h2>Message Me</h2></legend><br>
+            <div>
+              <label for="name">Name:</label><br>
+              <input type="text" name="name" id="name"></textarea>
+              <p class='error' id='nameerror'>Please fill in the field for your name.</p>
+            </div>
+
+            <div>
+              <label for="message">Message:</label><br>
+              <textarea name="message" name="message" id="message" placeholder="Hi!"></textarea>
+              <p class='error' id='messageerror'>Please write a message to Abigail!</p>
+            </div>
+
+            <div>
+              <label for="email">Email:</label><br>
+              <input type="email" name="email" id="email"></textarea>
+              <p class='error' id='emailerror'>Please fill in a valid email address.</p>
+            </div>
+            <input type="submit" value="Submit">
+          </fieldset>
+      </form>
+
+      <script>
+        $('form').submit(function() {
+          if (!$('#name').val()) {
+            $('.error').css('display', 'block');
+            return false;
+          }
+          if (!$('#message').val()) {
+            $('.error').css('display', 'block');
+            return false;
+          }
+          if (!$('email').val()) {
+            $('.error').css('display', 'block');
+            return false;
+          }
+        });
+      </script>
+    </div>
+
+    <div class='row-container'>
+      <div class='contact'>
+        <div></div>
+        <a href="mailto:abisny@umich.edu"><i class="fas fa-envelope-square big-icon" aria-label='mail-to icon'></i></a> <!-- FONT AWESOME (envelope icon for email) -->
+        <a href='https://www.linkedin.com/in/abigail-snyder-0816/'><i class="fab fa-linkedin big-icon" aria-label="LinkedIn logo"></i></a> <!-- FONT AWESOME (Linkedin icon) -->
+        <div></div>
       </div>
-      <div class='row-container'>
-        <img src='images/profile-2.jpg' alt='Abigail Snyder'>
-      </div>
+    </div>
+
+    <div class='row-container'>
+      <img class='small-header-img' src='images/profile-2.jpg' alt='Abigail Snyder'>
     </div>
   </main>
 </body>
