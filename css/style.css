@@ -138,7 +138,7 @@ div.contact {
   grid-template-columns: 80% auto;
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 750px) {
   .body {
     font-style: italic;
   }
@@ -212,12 +212,12 @@ body form {
   font-style: normal;
 }
 
-/* FlipCard */
+/* Flip Card stuff */
 .flip-card {
   background-color: transparent;
   width: 300px;
   height: 200px;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px;
 }
 
 .flip-card-inner {
@@ -230,6 +230,10 @@ body form {
 }
 
 .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card:focus {
   transform: rotateY(180deg);
 }
 
