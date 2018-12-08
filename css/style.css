@@ -217,7 +217,6 @@ body form {
   background-color: transparent;
   width: 300px;
   height: 200px;
-  border: 1px solid #f1f1f1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -241,14 +240,11 @@ body form {
   backface-visibility: hidden;
 }
 
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
-
 .flip-card-back {
-  background-color: darkgrey;
+  background-color: darkblue;
   color: white;
+  border: 1px solid white;  /* white border line */
+  padding: 3px;             /* pixels between img and border */
   transform: rotateY(180deg);
 }
 
