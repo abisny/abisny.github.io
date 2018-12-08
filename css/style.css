@@ -1,23 +1,4 @@
 /* PORTFOLIO STYLE SHEET */
-
-.skip {
-        position: absolute;
-        top: -1000px;
-        left: -1000px;
-        height: 1px;
-        width: 1px;
-        text-align: left;
-        overflow: hidden;
-    }
-
-a.skip:active, a.skip:focus, a.skip:hover {
-    left: 0;
-    top: 0;
-    width: auto;
-    height: auto;
-    overflow: visible;
-}
-
 body {
   background-color: pink;
   color: black;
@@ -280,20 +261,39 @@ body.carousel {
   margin: 0;
 }
 
-.my-slides {
+.mySlides {
   display: none;
 }
 
 img.carousel {
   vertical-align: middle;
   width: 100%;
-  border: none;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
+}
+
+.skip {
+  position: absolute;
+  top: -1000px;
+  left: -1000px;
+  height: 1px;
+  width: 1px;
+  text-align: left;
+  overflow: hidden;
+}
+
+a.skip:active, a.skip:focus, a.skip:hover {
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  overflow: visible;
 }
 
 .next, .prev {
@@ -354,5 +354,5 @@ img.carousel {
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+  .prev, .next {font-size: 11px}
 }
