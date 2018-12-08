@@ -167,6 +167,30 @@ div.contact {
   }
 }
 
+.gallery {
+  width: 95%;
+  margin:0 auto;
+  display: grid;
+	grid-template-columns: 1fr;
+}
+
+@media only screen and (min-width: 750px) {
+	.gallery {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+	}
+}
+
+.gallery img {
+	width: 100%;
+}
+
+.item {
+	border: 2px solid black;
+}
+
 .row-container {
   display: grid;
   margin-left: 5px;
@@ -176,10 +200,9 @@ div.contact {
 
 .container-projects {
   display: grid;
-  margin-left: 5px;
-  margin-right: 5px;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  grid-template-columns: 1fr;
 }
 
 button {
@@ -197,6 +220,7 @@ body form {
 
 @media only screen and (min-width: 750px) {
   .container-projects {
+    grid-template-columns: 1fr 1fr 1fr;
     margin-left: 20px;
     margin-right: 20px;
     column-gap: 20px;
