@@ -12,42 +12,42 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 </head>
 <body>
-    <header><h1>ABIGAIL SNYDER</h1></header>
-    <nav>
-        <ul>
-            <li class='nav'><a href='index.html'>Home</a></li>
-            <li class='nav'><a class='current' href='projects.html'>Projects</a></li>
-            <li class='nav'><a href='graphic-design.html'>Graphic Design</a></li>
-            <li class='nav'><a href='contact.html'>Contact</a></li>
-            <li class='nav'><a href='photography.html'>Photos</a></li>
-        </ul>
-    </nav>
+  <a href="#content" class="skip">Skip to content</a>
+  <header><h1>ABIGAIL SNYDER</h1></header>
+  <nav>
+      <ul>
+          <li class='nav'><a href='index.html'>Home</a></li>
+          <li class='nav'><a class='current' href='projects.html'>Projects</a></li>
+          <li class='nav'><a href='graphic-design.html'>Graphic Design</a></li>
+          <li class='nav'><a href='contact.html'>Contact</a></li>
+          <li class='nav'><a href='photography.html'>Photos</a></li>
+      </ul>
+  </nav>
 
-    <a href="#content" class="skip">Skip to content</a>
-    <main id='content'>
-      <h1 class='projects'>My Projects</h1>
-      <div class="controls">
-            <button type="button" class="control" data-filter="all">All</button>
-            <button type="button" class="control" data-filter=".lf">LiftForward</button>
-            <button type="button" class="control" data-filter=".sparkly">Sparkly</button>
-            <button type="button" class="control" data-filter="none">None</button>
-      </div>
-      <h2 class='projects'>Work Experience</h2>
-      <div class='gallery filter'>
-        <a href='images/liftforward-home.png' class='mix lf' data-lightbox='lf' data-title='lf home'> <img src='images/liftforward-home.png' alt='LiftForward'><i aria-label='lightbox img'></i></a>
-    		<a href='images/liftforward-microsoft.png' class='mix lf' data-lightbox='lf' data-title='lf microsoft'> <img src='images/liftforward-microsoft.png' alt='LiftForward-Microsoft'><i aria-label='lightbox img'></i></a>
-    		<a href='images/liftforward-signin.png' class='mix lf' data-lightbox='lf' data-title='lf sign in'> <img src='images/liftforward-signin.png' alt='LiftForward-Sign-In'><i aria-label='lightbox img'></i></a>
-        <a href='images/sparkly-home.png' class='mix sparkly' data-lightbox='sparkly' data-title='sparkly'> <img class="single-item" src='images/sparkly-home.png' alt='Sparkly.io'><i aria-label='lightbox img'></i></a>
-      </div>
-    </main>
+  <main id='content'>
+    <h1 class='projects'>My Projects</h1>
+    <div class="controls">
+          <button type="button" class="control" data-filter="all">All</button>
+          <button type="button" class="control" data-filter=".lf">LiftForward</button>
+          <button type="button" class="control" data-filter=".sparkly">Sparkly</button>
+          <button type="button" class="control" data-filter="none">None</button>
+    </div>
+    <h2 class='projects'>Work Experience</h2>
+    <div class='gallery filter'>
+      <a href='images/liftforward-home.png' class='mix lf' data-lightbox='lf' data-title='lf home'> <img src='images/liftforward-home.png' alt='LiftForward'><i aria-label='lightbox img'></i></a>
+  		<a href='images/liftforward-microsoft.png' class='mix lf' data-lightbox='lf' data-title='lf microsoft'> <img src='images/liftforward-microsoft.png' alt='LiftForward-Microsoft'><i aria-label='lightbox img'></i></a>
+  		<a href='images/liftforward-signin.png' class='mix lf' data-lightbox='lf' data-title='lf sign in'> <img src='images/liftforward-signin.png' alt='LiftForward-Sign-In'><i aria-label='lightbox img'></i></a>
+      <a href='images/sparkly-home.png' class='mix sparkly' data-lightbox='sparkly' data-title='sparkly'> <img class="single-item" src='images/sparkly-home.png' alt='Sparkly.io'><i aria-label='lightbox img'></i></a>
+    </div>
+  </main>
 
-    <script src="js/lightbox-plus-jquery.js"></script>
-    <script src="js/mixitup.js"></script>
-    <script>
-      var containerEl = document.querySelector('.filter');
-      var mixer = mixitup(containerEl);
-    </script>
+  <script src="js/lightbox-plus-jquery.js"></script>
+  <script src="js/mixitup.js"></script>
+  <script>
+    var containerEl = document.querySelector('.filter');
+    var mixer = mixitup(containerEl);
+  </script>
 
-    <footer></footer>
+  <footer></footer>
 </body>
 </html>
